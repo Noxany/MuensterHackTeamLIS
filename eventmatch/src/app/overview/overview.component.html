@@ -1,1 +1,22 @@
-<p>overview works!</p>
+<ng-container *ngFor="let card of cardData">
+    <mat-divider></mat-divider>
+        <mat-card style="margin: 4px;">
+            <mat-card-header>
+                <mat-card-title>
+                    <div>
+                        {{card.eventName}}
+                    </div>
+                </mat-card-title>
+                <mat-card-subtitle>
+                    <div>
+                        {{card.eventHolder}} {{card.eventLocation}}
+                    </div>
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content style="display: inline;">
+                <div>
+                    {{card.eventContent}}
+                </div>
+            </mat-card-content>
+        </mat-card>
+</ng-container>
