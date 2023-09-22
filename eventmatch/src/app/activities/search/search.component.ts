@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {
     this.searchForm = this.fb.group({
-      searchString: '',
+      activityName: '',
       dateFrom: '',
       dateUntil: '',
       tags: new FormControl([])

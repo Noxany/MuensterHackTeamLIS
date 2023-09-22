@@ -1,33 +1,37 @@
 <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
 
     <!-- Search String Input -->
-    <div class="form-group">
-      <label for="searchString">Search String:</label>
-      <input type="text" id="searchString" class="form-control" formControlName="searchString">
-    </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Search String</mat-label>
+      <input matInput formControlName="activityName">
+    </mat-form-field>
   
     <!-- Datepicker From Input -->
-    <div class="form-group">
-      <label for="dateFrom">Date From:</label>
-      <input type="date" id="dateFrom" class="form-control" formControlName="dateFrom">
-    </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Date From</mat-label>
+      <input matInput [matDatepicker]="dateFromPicker" formControlName="dateFrom">
+      <mat-datepicker-toggle matSuffix [for]="dateFromPicker"></mat-datepicker-toggle>
+      <mat-datepicker #dateFromPicker></mat-datepicker>
+    </mat-form-field>
   
     <!-- Datepicker Until Input -->
-    <div class="form-group">
-      <label for="dateUntil">Date Until:</label>
-      <input type="date" id="dateUntil" class="form-control" formControlName="dateUntil">
-    </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Date Until</mat-label>
+      <input matInput [matDatepicker]="dateUntilPicker" formControlName="dateUntil">
+      <mat-datepicker-toggle matSuffix [for]="dateUntilPicker"></mat-datepicker-toggle>
+      <mat-datepicker #dateUntilPicker></mat-datepicker>
+    </mat-form-field>
   
     <!-- Multiselect for Tags -->
-    <div class="form-group">
-      <label for="tags">Tags:</label>
-      <select multiple id="tags" class="form-control" formControlName="tags">
-        <option *ngFor="let tag of tagsList" [value]="tag">{{tag}}</option>
-      </select>
-    </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Tags</mat-label>
+      <mat-select multiple formControlName="tags">
+        <mat-option *ngFor="let tag of tagsList" [value]="tag">{{ tag }}</mat-option>
+      </mat-select>
+    </mat-form-field>
   
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary">Search</button>
+    <button mat-raised-button color="primary" type="submit">Search</button>
   
   </form>
   
