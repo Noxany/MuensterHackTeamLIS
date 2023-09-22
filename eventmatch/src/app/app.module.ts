@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { TinderComponent } from './activities/tinder/tinder.component';
 import { SearchComponent } from './activities/search/search.component';
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TinderComponent,
-    SearchComponent
+    SearchComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,
