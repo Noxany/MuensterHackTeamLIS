@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { TinderComponent } from './activities/tinder/tinder.component';
 import { SearchComponent } from './activities/search/search.component';
 import { OverviewComponent } from './overview/overview.component';
+import {MatCardModule} from '@angular/material/card';
+import { SpecificCardComponent } from './specific-card/specific-card.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { OverviewComponent } from './overview/overview.component';
     HomeComponent,
     TinderComponent,
     SearchComponent,
-    OverviewComponent
+    OverviewComponent,
+    SpecificCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
