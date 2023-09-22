@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { TinderComponent } from './activities/tinder/tinder.component';
 import { SearchComponent } from './activities/search/search.component';
 import { OverviewComponent } from './overview/overview.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { OverviewComponent } from './overview/overview.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
