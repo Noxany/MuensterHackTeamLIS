@@ -7,7 +7,7 @@ import { SearchComponent } from './activities/search/search.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'activities/tinder', component: TinderComponent },
-  { path: 'activities/overview', component: SearchComponent },
+  { path: 'activities/search', component: SearchComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' } // This is an optional default route
 ];
 
