@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Hochschulsport Muenster",
+    "offers": [
+      {
+        "pics": [
+          {
+            "name": "Header",
+            "url": ""
+          }
+        ],
+        "id": 1,
+        "name": "Badminton",
+        "trainer": [
+          {
+            "name": "Elara Bliss"
+          },
+          {
+            "name": "Daniel Schlüter"
+          }
+        ],
+        "link": "https://www.hochschulsport-muenster.de/angebote/aktueller_zeitraum_0/_Badminton.html",
+        "description": "Badminton ist eine der schnellsten und konditionell anspruchsvollsten Sportarten der Welt, bei der der Ball Spitzengeschwindigkeiten von bis zu 350 km/h erreicht.\n\nSomit sind Anforderungen an Ausdauer, Kraft und Reaktionsvermögen an die Spieler gestellt. Diesen Spitzenbereich des Badmintonsportes KANN der Badmintonbereich des Hochschulsports Münster sicherlich durch das Wettkampftraining, angeleitet durch qualifizierte Badmintontrainer, und durch Teilnahme an den Deutschen Hochschulsportmeisterschaften bieten.",
+        "location": {
+          "name": "Ballsporthalle",
+          "adress": "Horstmarer Landweg 68b 48149 Münster"
+        },
+        "date": [
+          {
+            "day": "Montag",
+            "time": "20:00 - 22:00"
+          },
+          {
+            "day": "Mittwoch",
+            "time": "20:00 - 22:00"
+          }
+        ],
+        "prices": {
+          "students": "15 EUR",
+          "employees": "23 EUR",
+          "alumni": "30 EUR",
+          "guests": "38 EUR"
+        },
+        "maxParticipants": 30,
+        "minParticipants": 10,
+        "period": "07.08.-02.10."
+      }]
+  }
+]
