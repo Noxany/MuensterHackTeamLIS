@@ -6,4 +6,5 @@ export interface Activity {
     location: string,
     recurringDate: Date,
     description: string,
+    tags: string[],
 }
