@@ -1,1 +1,33 @@
-<p>search works!</p>
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+
+    <!-- Search String Input -->
+    <div class="form-group">
+      <label for="searchString">Search String:</label>
+      <input type="text" id="searchString" class="form-control" formControlName="searchString">
+    </div>
+  
+    <!-- Datepicker From Input -->
+    <div class="form-group">
+      <label for="dateFrom">Date From:</label>
+      <input type="date" id="dateFrom" class="form-control" formControlName="dateFrom">
+    </div>
+  
+    <!-- Datepicker Until Input -->
+    <div class="form-group">
+      <label for="dateUntil">Date Until:</label>
+      <input type="date" id="dateUntil" class="form-control" formControlName="dateUntil">
+    </div>
+  
+    <!-- Multiselect for Tags -->
+    <div class="form-group">
+      <label for="tags">Tags:</label>
+      <select multiple id="tags" class="form-control" formControlName="tags">
+        <option *ngFor="let tag of tagsList" [value]="tag">{{tag}}</option>
+      </select>
+    </div>
+  
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary">Search</button>
+  
+  </form>
+  
